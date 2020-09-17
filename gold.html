@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <!-- HEAD -->
+  <head>
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+  	<link rel="icon" sizes="16x16 32x32 64x64" href="images/favicon.ico">
+  	<link rel="icon" type="image/png" sizes="196x196" href="images/favicon-192.png">
+  	<link rel="icon" type="image/png" sizes="160x160" href="images/favicon-160.png">
+  	<link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96.png">
+  	<link rel="icon" type="image/png" sizes="64x64" href="images/favicon-64.png">
+  	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+  	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16.png">
+  	<link rel="apple-touch-icon" href="images/favicon-57.png">
+  	<link rel="apple-touch-icon" sizes="114x114" href="images/favicon-114.png">
+  	<link rel="apple-touch-icon" sizes="72x72" href="images/favicon-72.png">
+  	<link rel="apple-touch-icon" sizes="144x144" href="images/favicon-144.png">
+  	<link rel="apple-touch-icon" sizes="60x60" href="images/favicon-60.png">
+  	<link rel="apple-touch-icon" sizes="120x120" href="images/favicon-120.png">
+  	<link rel="apple-touch-icon" sizes="76x76" href="images/favicon-76.png">
+  	<link rel="apple-touch-icon" sizes="152x152" href="images/favicon-152.png">
+  	<link rel="apple-touch-icon" sizes="180x180" href="images/favicon-180.png">
+  	<meta name="msapplication-TileColor" content="#FFFFFF">
+  	<meta name="msapplication-TileImage" content="images/favicon-144.png">
+  	<meta name="msapplication-config" content="browserconfig.xml">
+
+    <!-- META AND VIEWPORT SETTINGS -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/master.css?v=0.37">
+
+    <!-- FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Arimo&display=swap" rel="stylesheet">
+
+    <!-- BOOTSTRAP CDN-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- BOOTSTRAP JAVASCRIPT CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+    <!-- PLOTLY CDN -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+    <!-- TYPEIT CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
+    <!-- TITLE -->
+    <title>Eribol - Gold</title>
+
+    <!-- NAVIGATION BAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="home"><span class="badge badge-info">Eribol</span></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- NAV LIST BEGIN -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <!-- HOME -->
+          <li class="nav-item">
+            <a class="nav-link" href="home"><b>Home</b></a>
+          </li>
+          <!-- COMPANY DROPDOWN -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <b>Company</b>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="about">About</a>
+              <a class="dropdown-item" href="team">Team</a>
+            </div>
+          </li>
+          <!-- DATA DROPDOWN -->
+          <li class="nav-item dropdown active">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <b>Analytics</b>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="data">Data</a>
+              <a class="dropdown-item" href="gold">Gold</a>
+            </div>
+          </li>
+          <!-- CONTACT -->
+          </li>
+          <li class="nav-item">
+      <a class="nav-link" href="contact"><b>Contact</b></a>
+          </li>
+          <!-- NAV LIST END -->
+        </ul>
+      </div>
+    </nav>
+  </head>
+
+    <!-- BODY -->
+  <body>
+
+    <!-- 1ST JUMBOTRON -->
+    <div id='jumbo-gold-1' class="jumbotron">
+
+      <div class="container">
+          <a id='gold-contact' href='contact' type="button" class="btn btn-outline-light float-right">Contact Us</a>
+            <h1 class="featurette-heading"><p id="sub-head"></h1>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container">
+
+    <!-- 2ND JUMBOTRON -->
+    <div id='jumbo-gold-2' class="col-lg m-auto w-100 justify-content-center">
+<div id="myDiv"></div>
+    </div>
+    <br>
+
+    <!-- 3RD JUMBOTRON -->
+    <div id='jumbo-gold-3' class="jumbotron">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg m-auto justify-content-center">
+            <h1 class="featurette-heading"><b>6 Months Ahead</b> <span class="text-muted"><br>Every Month</span></h1>
+            <br>
+            <p class='lead'>Get access to our monthly gold price forecasts. Using natural language processing,
+              Eribol forecasts gold price 6 months ahead, every month. Our methodology bridges the gap between
+              technical and fundamental market analysis, and our results aide financial and risk strategy within the gold market.</p>
+          </div>
+          <div class="col-lg m-auto w-100 justify-content-center">
+            <h5 style='text-align:left;'><b>Forecast</b></h5>
+            <table style="width:100%">
+              <tr>
+                <th>Date</th>
+                <th>$/oz</th>
+                <th>UCI</th>
+                <th>LCI</th>
+              </tr>
+              <tr>
+                <td>2020-June</td>
+                <td>1567</td>
+                <td>1881</td>
+                <td>1252</td>
+              </tr>
+              <tr>
+                <td>2020-May</td>
+                <td>1645</td>
+                <td>2020</td>
+                <td>1269</td>
+              </tr>
+              <tr>
+                <td>2020-Apr</td>
+                <td>1707</td>
+                <td>2132</td>
+                <td>1281</td>
+              </tr>
+              <tr>
+                <td>2020-Mar</td>
+                <td>1706</td>
+                <td>2134</td>
+                <td>1278</td>
+              </tr>
+              <tr>
+                <td>2020-Feb</td>
+                <td>1639</td>
+                <td>2020</td>
+                <td>1258</td>
+              </tr>
+              <tr>
+                <td>2020-Jan</td>
+                <td>1529</td>
+                <td>1830</td>
+                <td>1228</td>
+              </tr>
+            </table>
+            <br>
+              <p id='tab'>*Data from July 2020 forecast. <b>UCI</b> = 95% Upper Confidence Interval, <b>LCI</b> = 95% Lower Confidence Interval</p>
+          </div>
+        </div>
+      </div>
+        </div>
+
+    <!-- 4TH JUMBOTRON -->
+    <div id='jumbo-gold-3' class="jumbotron">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg m-auto justify-content-center">
+            <h1 class="featurette-heading"><b>Results</b> <span class="text-muted"><br>Metrics</span></h1>
+            <br>
+            <p class='lead'>We aim to be transparent by openly publishing our models metrics. Time is precious,
+              so our forecast reports are formatted to be as clear and concise as possible.
+              If you have any questions regarding our forecasts, methodology or anything else,
+               our team will be happy to answer.</p>
+          </div>
+          <div class="col-lg m-auto w-100 justify-content-center">
+            <h5 style='text-align:left;'><b>Metrics</b></h5>
+            <table style="width:100%">
+              <tr>
+                <th>Length</th>
+                <th>RMSE</th>
+                <th>MSE</th>
+                <th>MAE</th>
+              </tr>
+              <tr>
+                <td>>5 Years</td>
+                <td>91.7</td>
+                <td>8407.9</td>
+                <td>53.5</td>
+              </tr>
+              <tr>
+                <td>3 Years</td>
+                <td>69.7</td>
+                <td>4808.5</td>
+                <td>31.4</td>
+              </tr>
+              <tr>
+                <td>1 Year</td>
+                <td>113.3</td>
+                <td>12826.7</td>
+                <td>90.7</td>
+              </tr>
+            </table>
+            <br>
+              <p id='tab'>*<b>RMSE</b> =Root Mean Square Error,
+                 <b>MSE</b> = Mean Square Error,
+               <b>MAE</b> = Median Absolute Error</p>
+          </div>
+        </div>
+      </div>
+      <!-- BAR CHART -->
+      <div class="container">
+        <div id="bar"></div>
+          <p id='tab'>*<b>Yearly Mean Metrics</b>, 2020 contains data up to June.</p>
+      </div>
+    </div>
+
+
+  <!-- FIND OUT MORE -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg m-auto justify-content-center">
+      <div class="card">
+        <div class="card-header">
+          <b>Reporting</b>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">View our report</h5>
+          <p class="card-text">Find out what makes us unique, see our clear and transparent reporting style for November 2019.</p>
+          <a href="https://eribol.tech/data/Eribol_Gold-Forecast_201911.pdf" class="btn btn-secondary">Download</a>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="col-lg m-auto justify-content-center">
+    <div class="card">
+      <div class="card-header">
+          <b>Purchase</b>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Get access to insight</h5>
+        <p class="card-text">If you are interested in accessing our forecasts, contact us below for pricing and terms.</p>
+        <a href="contact" class="btn btn-secondary">Get in touch</a>
+      </div>
+    </div>
+  </div>
+      </div>
+        </div>
+
+    <br><br>
+
+
+  <!-- END BODY -->
+
+  </body>
+
+  <!-- FOOTER -->
+  <footer class="container">
+    <p class="float-right"><a href="#">Back to top</a></p>
+    <p><span class="badge badge-info">&copy; 2020 Eribol Ltd.</span> &middot; <a href="privacy">Privacy</a> &middot; <a href="terms">Terms</a></p>
+  </footer>
+
+  <!-- CUSTOM JAVASCRIPT -->
+  <script src="javascript/typeit_gold.js?v=0.1"> </script>
+  <script src="javascript/plotly_gold.js?v=0.1"> </script>
+  <script src="javascript/plotly_gold2.js?v=0.1"> </script>
+</html>
